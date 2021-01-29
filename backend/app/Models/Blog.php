@@ -9,7 +9,7 @@ class Blog extends Model
 {
     use HasFactory;
     // テーブル名
-    protected $table = "blogs"
+    protected $table = "blogs";
 
     // 可変項目
     protected $fillable =[
