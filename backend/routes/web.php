@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// ブログ一覧画面を表示(名前付きURL:blogs)
+Route::get('/', 'BlogController@showList')->name("blogs");
