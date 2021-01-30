@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 // ブログ一覧画面を表示(名前付きURL:blogs)
-Route::get('/', 'BlogController@showList')->name("blogs");
+Route::get('/', [BlogController::class, 'showList'])->name("blogs");
