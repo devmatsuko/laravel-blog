@@ -16,3 +16,5 @@ use App\Http\Controllers\BlogController;
 
 // ブログ一覧画面を表示(名前付きURL:blogs)
 Route::get('/', [BlogController::class, 'showList'])->name("blogs");
+// ブログ詳細画面を表示(名前付きURL:blog/1d)
+Route::get('/blog/{id}', [BlogController::class, 'showDetail'])->name("show");
