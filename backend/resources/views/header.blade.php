@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="#">ブログ一覧 <span class="sr-only"></span></a>
-      <a class="nav-item nav-link" href="#">ブログ投稿</a>Ï
+      <a class="nav-item nav-link" href="{{ route('create') }}">ブログ投稿</a>Ï
     </div>
   </div>
 </nav>
